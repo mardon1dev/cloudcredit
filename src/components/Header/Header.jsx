@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.avif";
+import { Link, NavLink } from 'react-router-dom';
 
 import "./Header.css";
 
@@ -17,27 +18,27 @@ const Header = () => {
             </div>
             <div className="container">
                 <div className="header flex items-center justify-between py-3">
-                    <a href="/">
-                        <img src={Logo} alt="Logo"/>
+                    <a className='max-w-[200px]' href="/">
+                        <img className='w-full' src={Logo} alt="Logo"/>
                     </a>
-                    <ul className={`${ burger ? "header-list": "open"} md:flex md:items-center w-full md:justify-end gap-[10px] lg:gap-[45px] items-end justify-center`}>
+                    <ul className={`${ burger ? "header-list": "open"} md:flex md:items-center w-full md:justify-end gap-[20px] lg:gap-[45px] items-end justify-center`}>
                         <li>
-                            <a className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left pb-1 hover:border-b-2 border-black" href="/">Home</a>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/">Home</NavLink>
                         </li>
                         <li>
-                            <a className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left pb-1 hover:border-b-2 border-black" href="/">Internship</a>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/internship">Internship</NavLink>
                         </li>
                         <li>
-                            <a className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left pb-1 hover:border-b-2 border-black" href="/">Training</a>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/training">Training</NavLink>
                         </li>
                         <li>
-                            <a className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left pb-1 hover:border-b-2 border-black" href="/">Services</a>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/services">Services</NavLink>
                         </li>
                         <li>
-                            <a className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left pb-1 hover:border-b-2 border-black" href="/">About Us</a>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/about">About Us</NavLink>
                         </li>
                         <li>
-                            <a className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left pb-1 hover:border-b-2 border-black" href="/">Contact</a>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                     <div className={`${!burger ? "header-burger": "change" }`} onClick={handleBurger}>

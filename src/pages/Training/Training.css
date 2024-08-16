@@ -1,0 +1,7 @@
+.training{
+    width: 100%;
+    background-image: url("../../assets/training.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+};
