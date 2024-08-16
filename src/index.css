@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-attachment: fixed;
+}
+
+.container{
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}

@@ -1,0 +1,54 @@
+#header{
+    background-color: #ffffff;
+}
+.header-burger{
+    display: none;
+}
+@media (max-width:768px) {
+    .header-burger, .change{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 100;
+    }
+    .header-span{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        border-radius: 10px;
+        transition: all .3s linear;
+    }
+    .change span{
+        background-color: black;
+        transition: all .3s linear;
+    }
+    .change span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    .change span:nth-child(2){
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+
+    .header-list, .open{
+        position: absolute;
+        padding: 25px;
+        height: 40vh;
+        overflow: scroll;
+        background-color: #ffffff;
+        top: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: all .3s linear;
+        z-index: 9;
+    }
+    .header-list{
+        right: 0%;
+    }
+    .open{
+        right: -100%;
+    }
+
+}
