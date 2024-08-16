@@ -4,66 +4,63 @@ import internElevate from "../../assets/internship-elevate.avif";
 
 import "./InternShip.css"
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 import ApplyForm from '../../components/ApplyForm/ApplyForm';
 
 const InternShip = () => {
-    AOS.init()
     const internShips = [
         {
             id: 1,
             title: "Frontend Web Development",
             description: "Learn the basics of HTML, CSS, and JavaScript to build responsive and interactive web applications.",
-            image: "/src/assets/intern/frontend.avif"
+            image: "/assets/intern/frontend.avif"
         },
         {
             id: 2,
             title: "Backend Web Development",
             description: "Learn the basics of Node.js, Express.js, and MongoDB to build scalable and secure backend applications.",
-            image: "/src/assets/intern/backend.avif"
+            image: "/assets/intern/backend.avif"
         },
         {
             id: 3,
             title: "Pthyon Programming",
             description: "Learn the basics of Python to build data-driven applications and automate tasks.",
-            image: "/src/assets/intern/python.avif"
+            image: "/assets/intern/python.avif"
         },
         {
             id: 4,
             title: "Data Science",
             description: "Python, Pandas, Numpy, Advanced Excel, Power Bi, SQL",
-            image: "/src/assets/intern/data-science.avif"
+            image: "/assets/intern/data-science.avif"
         },
         {
             id: 5,
             title: "Machine Learning & AI",
             description: "Deep Learning, NLP, Computer Vision, Pytorch",
-            image: "/src/assets/intern/machine-learning.avif"
+            image: "/assets/intern/machine-learning.avif"
         },
         {
             id: 6,
             title: "Cloud AI with AWS",
             description: "AWS, Azure, Google Cloud, Cloud Security, Cloud Architecture",
-            image: "/src/assets/intern/cloud-ai.avif"
+            image: "/assets/intern/cloud-ai.avif"
         },
         {
             id: 7,
             title: "Java Core",
             description: "Foundations of Java, Integrated Development Environments (IDEs), Object-Oriented Programming (OOP), Java Tools & Packages",
-            image: "/src/assets/intern/java-core.avif"
+            image: "/assets/intern/java-core.avif"
         },
         {
             id: 8,
             title: "Artificial Intelligence",
             description: "Deep Learning, NLP, Computer Vision, Pytorch",
-            image: "/src/assets/intern/artificial-intelligance.avif"
+            image: "/assets/intern/artificial-intelligance.avif"
         },
         {
             id: 9,
             title: "Data Analythics",
             description: "Explore opportunities in software development, data science,Mysql, AI, and machine learning.",
-            image: "/src/assets/intern/data-analythics.avif"
+            image: "/assets/intern/data-analythics.avif"
         }
     ]
     return (

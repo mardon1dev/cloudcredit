@@ -2,12 +2,9 @@ import React from 'react'
 import  "./Training.css";
 import elevateImg from "../../assets/elevate.avif"
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 import ApplyForm from '../../components/ApplyForm/ApplyForm';
 
 const Training = () => {
-    AOS.init();
     return (
         <div className='mt-[100px]'>
         <section className='py-[120px] training'>

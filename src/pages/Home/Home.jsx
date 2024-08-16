@@ -2,44 +2,42 @@ import React from 'react'
 import Hero from './Hero/Hero';
 import elevateImg from "../../assets/elevate.avif";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 
 const Home = () => {
   const careers = [
     {
       id: 1,
-      img: "/src/assets/careers/web-development.avif",
+      img: "/assets/careers/web-development.avif",
       title: "Web Development",
       desc: "Get custom, responsive websites with SEO optimization and continuous support for your business."
     },
     {
       id: 2,
-      img: "/src/assets/careers/machine-learning.avif",
+      img: "/assets/careers/machine-learning.avif",
       title: "AI nad Machine Learning",
       desc: "Explore opportunities in software development, data science, cybersecurity, web development, AI, and machine learning."
     },
     {
       id: 3,
-      img: "/src/assets/careers/cyber-security.avif",
+      img: "/assets/careers/cyber-security.avif",
       title: "Cyber Security",
       desc: "Apply for internships in software development, data science, cybersecurity, web development, AI, and machine learning."
     },
     {
       id: 4,
-      img: "/src/assets/careers/devops.jpeg",
+      img: "/assets/careers/devops.jpeg",
       title: "DevOps",
       desc: "DevOps combines development (Dev) and operations (Ops) to increase the efficiency, speed, and security of software development."
     },
     {
       id: 5,
-      img: "/src/assets/careers/data-analysis.avif",
+      img: "/assets/careers/data-analysis.avif",
       title: "Data Analysis",
       desc: "Explore opportunities in software development, data science,Mysql, AI, and machine learning."
     },
     {
       id:6,
-      img: "/src/assets/careers/cloud-computing.avif",
+      img: "/assets/careers/cloud-computing.avif",
       title: "Cloud Computing",
       desc: "Apply for internships in Cloud Computing servers, storage, databases, networking, software, analytics."
     }
@@ -47,7 +45,7 @@ const Home = () => {
   const reviews = [
     {
       id: 1,
-      img: "/src/assets/reviews/abhishek.avif",
+      img: "/assets/reviews/abhishek.avif",
       desc: "The web development services provided by AI Innovations are top-notch and highly professional.",
       name: "Abhishek Jangid",
       rating: 5,
@@ -55,14 +53,13 @@ const Home = () => {
     },
     {
       id: 2,
-      img: "/src/assets/reviews/sharma.avif",
+      img: "/assets/reviews/sharma.avif",
       desc: "I had a great experience working on a live project during my internship.",
       name: "Dev Sharma",
       rating: 5,
       location: "Jaipur"
     }
   ]
-  AOS.init();
   return (
     <>
     <Hero />

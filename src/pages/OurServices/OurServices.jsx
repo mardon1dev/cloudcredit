@@ -5,19 +5,19 @@ const OurServices = () => {
     const services =[
         {
             id:1,
-            image: "/src/assets/services/training.avif",
+            image: "/assets/services/training.avif",
             title:"Apply to Training",
             description: "Explore opportunities in software development, data science, cybersecurity, web development, AI, and machine learning."
         },
         {
             id: 2,
-            image: "/src/assets/services/internship.avif",
+            image: "/assets/services/internship.avif",
             title: "Apply to Internship",
             description: "Work on live projects, receive expert mentorship, and boost your career growth."
         },
         {
             id: 3,
-            image: "/src/assets/services/web-development.avif",
+            image: "/assets/services/web-development.avif",
             title: "Web Development Services",
             description: "Custom responsive websites with SEO optimization and continuous support."
         }

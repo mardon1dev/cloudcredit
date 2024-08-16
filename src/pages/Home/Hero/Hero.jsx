@@ -4,6 +4,7 @@ import video from "../../../assets/video.mp4"
 import Video from '../../../components/Video/Video';
 
 import "./Hero.css";
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <div className='hero w-full relative'>
@@ -15,7 +16,7 @@ const Hero = () => {
               <p className='py-6'>Apply for IT internships and training programs to boost your career growth with expert mentorship.</p>
             </div>
             <div className='flex items-center gap-[20px] flex-col sm:flex-row'>
-              <a className='w-[150px] text-white py-3 px-6 border-[1px] border-white rounded-[50px] flex items-center justify-center hover:bg-white hover:text-black duration-150' href='#'>Explore</a>
+              <Link className='w-[150px] text-white py-3 px-6 border-[1px] border-white rounded-[50px] flex items-center justify-center hover:bg-white hover:text-black duration-150' to='/internship' >Explore</Link>
               <a className='w-[150px] text-white py-3 px-6 border-[1px] border-white rounded-[50px] flex items-center justify-center hover:bg-white hover:text-black duration-150' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank'>Apply</a>
             </div>
           </div>

@@ -43,6 +43,7 @@
         align-items: center;
         transition: all .3s linear;
         z-index: 9;
+        padding-top:50px;
     }
     .header-list{
         left: 0%;
