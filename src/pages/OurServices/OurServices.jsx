@@ -33,12 +33,12 @@ const OurServices = () => {
                         {
                             services && services.map(item => {
                                 return (
-                                    <div className='sm:max-w-[50%] md:max-w-[40%] lg:max-w-[31%] w-full items-center justify-start flex-col' key={item.id}>
-                                    <img className='w-full rounded-t-xl rounde h-[250px] object-cover' src={item.image} alt={item.description} />
-                                    <div className='w-full text-center md:text-left bg-white p-7'>
-                                    <h3 className='font-bold text-xl md:text-2xl'>{item.title}</h3>
-                                    <p className='mt-5 md:mt-7'>{item.description}</p>
-                                    </div>
+                                    <div className='sm:max-w-[50%] md:max-w-[40%] lg:max-w-[31%] items-center justify-start flex-col' key={item.id}>
+                                        <img className='w-full rounded-t-xl h-[250px] object-cover' src={item.image} alt={item.description} />
+                                        <div className='w-full text-center md:text-left bg-white p-7 min-h-[200px]'>
+                                            <h3 className='font-bold text-xl md:text-2xl'>{item.title}</h3>
+                                            <p className='mt-5 md:mt-7'>{item.description}</p>
+                                        </div>
                                     </div>
                                 )
                             })
