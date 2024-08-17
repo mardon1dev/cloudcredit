@@ -103,7 +103,7 @@ const Home = () => {
     {
       careers && careers.map(career => {
         return (
-          <div className='career sm:max-w-[48%] md:max-w-[31%] w-full flex flex-col items-center hover:shadow-xl p-3 rounded-xl' key={career.id} data-aos="fade-up">
+          <div className='career sm:max-w-[48%] md:max-w-[45%] w-full flex flex-col items-center hover:shadow-xl p-3 rounded-xl' key={career.id} data-aos="fade-up">
           <img className='w-full h-[200px] object-cover rounded-xl' src={career.img} alt={career.desc}/>
           <div className='career-info  mt-5'>
           <h3 className='font-semibold text-xl'>{career.title}</h3>
