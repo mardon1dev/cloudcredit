@@ -2,7 +2,7 @@ import React from 'react'
 
 const ApplyForm = () => {
   return (
-    <form action="" className='w-[90%]'>
+    <form action="">
         <label className='block mb-4' htmlFor="name">Name</label>
         <input className='w-full py-4 px-3 mb-4 rounded-xl outline-none border-[1px] border-gray-700 focus:border-gray-800' type="text" id="name" name="name" placeholder='Enter Your full name here' required/>
         <br/>
