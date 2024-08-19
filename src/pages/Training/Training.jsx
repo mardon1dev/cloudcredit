@@ -1,9 +1,9 @@
 import React from 'react'
-import  "./Training.css";
-import elevateImg from "../../assets/elevate.avif"
 
+import elevateImg from "../../assets/elevate.avif"
 import ApplyForm from '../../components/ApplyForm/ApplyForm';
 
+import  "./Training.css";
 const Training = () => {
     return (
         <div className='mt-[100px]'>
@@ -20,7 +20,7 @@ const Training = () => {
         <section className="elevateWrapper">
         <div className="container">
         <div className="elevate w-full flex items-center justify-between py-10 gap-8 flex-col md:flex-row">
-        <div data-aos="fade-right">
+        <div>
         <div className='elevate-info text-black max-w-[500px] w-full'>
         <h2 className='text-2xl sm:text-3xl md:text-5xl font-bold'>Elevate your IT Career</h2>
         <p className='mt-7'>
