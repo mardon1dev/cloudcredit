@@ -6,6 +6,11 @@ import "./Header.css";
 
 const Header = () => {
     const [burger, setBurger] = useState(false);
+
+    function handleMenuOpen() {
+        setBurger(false);
+        window.scrollTo(0, 0);
+    }
     
     function handleBurger() {
         setBurger(!burger);
@@ -23,22 +28,22 @@ const Header = () => {
                     </a>
                     <ul className={`${ burger ? "header-list": "open"} md:flex md:items-center w-full md:justify-end gap-[20px] lg:gap-[45px] items-end justify-center`}>
                         <li>
-                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/">Home</NavLink>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/" onClick={handleMenuOpen}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/internship">Internship</NavLink>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/internship" onClick={handleMenuOpen}>Internship</NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/training">Training</NavLink>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/training" onClick={handleMenuOpen}>Training</NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/services">Services</NavLink>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/services" onClick={handleMenuOpen}>Services</NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/about">About Us</NavLink>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/about" onClick={handleMenuOpen}>About Us</NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/contact">Contact</NavLink>
+                            <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/contact" onClick={handleMenuOpen}>Contact</NavLink>
                         </li>
                     </ul>
                     <Outlet />
