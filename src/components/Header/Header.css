@@ -46,10 +46,10 @@
         padding-top:50px;
     }
     .header-list{
-        left: 0%;
+        right: 0%;
     }
     .open{
-        left: -100%;
+        right: -100%;
     }
 
 }

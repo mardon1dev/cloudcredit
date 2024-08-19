@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className='hero w-full relative'>
       <div className='container'>
-        <div className='hero-content text-center h-[100vh] flex items-center justify-center'>
+        <div className='hero-content text-center sm:h-[100vh] h-auto sm:pt-[100px] py-[100px] flex items-center justify-center'>
           <div className='text-white max-w-[500px] md:max-w-[700px] flex items-center justify-center flex-col'>
             <h1 className='text-[32px] sm:text-5xl font-bold md:text-[64px]'>Elevate Your IT Career with AI Innovations</h1>
             <div className='max-w-[400px] md:max-w-[500px] text-center'>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .container{
