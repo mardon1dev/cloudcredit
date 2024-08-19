@@ -4,6 +4,8 @@ import elevateImg from "../../assets/elevate.avif"
 
 import ApplyForm from '../../components/ApplyForm/ApplyForm';
 
+import "./Training.css"
+
 const Training = () => {
     return (
         <div className='mt-[100px]'>
@@ -27,7 +29,7 @@ const Training = () => {
         At AI Innovations, we offer students the opportunity to apply for internships and training programs across various IT domains. 
         Additionally, our company provides comprehensive web development services.
         </p>
-        <a className='mt-7 w-[150px] text-black py-3 px-6 border-[1px] border-black rounded-[50px] flex items-center justify-center hover:bg-black hover:text-white duration-150' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank'>Apply</a>
+        <a className='training-button' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank'>Apply</a>
         </div>
         </div>
         <div className='elevate-img max-w-[544px] relative' data-aos="fade-left">
