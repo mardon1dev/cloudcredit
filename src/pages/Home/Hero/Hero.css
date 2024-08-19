@@ -1,3 +1,13 @@
-.hero{
-
+.explore, .apply{
+    width: 150px;
+    text-align: center;
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all .15s ease;
+}
+.explore:hover, .apply:hover{
+    background-color: white;
+    color: black;
 }

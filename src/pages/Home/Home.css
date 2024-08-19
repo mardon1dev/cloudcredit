@@ -1,0 +1,32 @@
+.start-career{
+    display:inline-block;
+    margin-top: 28px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    padding: 12px 24px;
+    border: 1px solid black;
+    border-radius: 50px;
+    transition: all .15s ease;
+}
+.start-career:hover{
+    background-color: black;
+    color: white;
+}
+
+.boost-career{
+    display: inline-block;
+    text-align:center;
+    margin-top:28px;
+    width: 200px;
+    padding:12px 24px;
+    color: white;
+    border: 1px solid #3b82f6;
+    background-color: #3b82f6;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+.boost-career:hover{
+    background-color: transparent;
+    color: #3b82f6;
+}

@@ -33,10 +33,9 @@
     .header-list, .open{
         position: absolute;
         padding: 25px;
-        height: 40vh;
         overflow: scroll;
         background-color: #ffffff;
-        top: 85px;
+        top: 105px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

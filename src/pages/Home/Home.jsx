@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from './Hero/Hero';
 import elevateImg from "../../assets/elevate.avif";
 
+import "./Home.css"
+
 
 const Home = () => {
   const careers = [
@@ -73,7 +75,7 @@ const Home = () => {
     At AI Innovations, we offer students the opportunity to apply for internships and training programs across various IT domains. 
     Additionally, our company provides comprehensive web development services.
     </p>
-    <a className='mt-7 w-[150px] text-black py-3 px-6 border-[1px] border-black rounded-[50px] flex items-center justify-center hover:bg-black hover:text-white duration-150' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank'>Apply</a>
+    <a className='start-career' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank'>Apply</a>
     </div>
     </div>
     <div className='elevate-img max-w-[544px] relative' data-aos="fade-left">
@@ -114,7 +116,7 @@ const Home = () => {
       })
     }
     </div>
-    <a className='mt-7 w-[200px] md:w-full mx-auto text-white py-3 px-6 border-[1px] border-blue-500 bg-blue-500 rounded-[50px] flex items-center justify-center hover:bg-transparent hover:text-blue-500 duration-150' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank' data-aos="fade-up">Apply</a>
+    <a className='boost-career' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank' data-aos="fade-up">Apply</a>
     </div>
     </div>
     </section>
