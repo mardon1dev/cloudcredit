@@ -4,8 +4,6 @@ import elevateImg from "../../assets/elevate.avif"
 
 import ApplyForm from '../../components/ApplyForm/ApplyForm';
 
-import "./Training.css"
-
 const Training = () => {
     return (
         <div className='mt-[100px]'>
