@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Logo from "../../assets/logo.avif";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 import "./Header.css";
 
@@ -41,6 +41,7 @@ const Header = () => {
                             <NavLink className="text-gray-900 text-base font-normal leading-6 tracking-normal text-left" to="/contact">Contact</NavLink>
                         </li>
                     </ul>
+                    <Outlet />
                     <div className={`${!burger ? "header-burger": "change" }`} onClick={handleBurger}>
                         <span className="header-span"></span>
                         <span className="header-span"></span>
