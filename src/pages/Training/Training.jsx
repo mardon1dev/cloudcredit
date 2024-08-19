@@ -30,7 +30,7 @@ const Training = () => {
         <a className='training-button' href='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL_25hgd6naX3_GDrIiq69_gCapIRQ8NCAO56YWZOmuSyNrg/alreadyresponded?vc=0&c=0&w=1&flr=0&usp=mail_form_link' target='_blank'>Apply</a>
         </div>
         </div>
-        <div className='elevate-img max-w-[544px] relative' data-aos="fade-left">
+        <div className='elevate-img max-w-[544px] relative'>
         <img className='w-full rounded-3xl h-auto' src={elevateImg} alt="Elevate"  width="544px" height="544px"/>
         <div className='elevate-stats absolute bottom-0 md:bottom-2 lg:bottom-6 bg-blue-400 w-full left-0 md:left-[-20px] lg:left-[-34px] flex sm:flex-row flex-col p-7 rounded-2xl'>
         <div className='flex flex-col text-white items-start w-[50%]'>
