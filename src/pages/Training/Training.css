@@ -17,6 +17,7 @@
     border-radius: 50px;
     transition: all .15s ease;
 }
+
 .training-button:hover{
     background-color: black;
     color: white;
