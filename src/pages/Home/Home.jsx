@@ -16,7 +16,7 @@ const Home = () => {
     {
       id: 2,
       img: "/assets/careers/machine-learning.avif",
-      title: "AI nad Machine Learning",
+      title: "AI and Machine Learning",
       desc: "Explore opportunities in software development, data science, cybersecurity, web development, AI, and machine learning."
     },
     {
