@@ -17,12 +17,12 @@ const Header = () => {
     }
     
     return (
-        <div className='w-full z-50 fixed top-0' id='header'>
-            <div className="header-top text-center py-[10px]">
-                <p className='text-[#1358E3] font-bold text-[12px] md:text-[16px]'>Welcome To Cloudcredits Technologies Pvt. Ltd.</p>
-            </div>
+        <div id='header'>
             <div className="container">
-                <div className="header flex items-center justify-between py-3">
+                <div className="header-top text-center py-[10px] w-full">
+                    <p className='text-[#1358E3] font-bold text-[12px] md:text-[16px]'>Welcome To Cloudcredits Technologies Pvt. Ltd.</p>
+                </div>
+                <div className="header flex items-center justify-between py-3 w-full">
                     <a className='max-w-[200px]' href="/">
                         <img className='w-full' src={Logo} alt="Logo"/>
                     </a>

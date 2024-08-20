@@ -1,4 +1,8 @@
 #header{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
     background-color: #ffffff;
 }
 .header-burger{
@@ -35,7 +39,7 @@
         padding: 25px;
         overflow: scroll;
         background-color: #ffffff;
-        top: 103px;
+        top: 100px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -45,10 +49,10 @@
         padding-top:50px;
     }
     .header-list{
-        right: 0%;
+        left: 0;
     }
     .open{
-        right: -100%;
+        left: -100%;
     }
 
 }
