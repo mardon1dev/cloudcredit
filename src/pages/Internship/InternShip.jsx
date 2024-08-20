@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import intern from "../../assets/internship.avif";
 import internElevate from "../../assets/internship-elevate.avif";
+import ApplyForm from '../../components/ApplyForm/ApplyForm';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "./InternShip.css"
 
-import ApplyForm from '../../components/ApplyForm/ApplyForm';
 
 const InternShip = () => {
+
+    useEffect(()=>{
+        AOS.init()
+    }, [])
     const internShips = [
         {
             id: 1,
@@ -86,7 +93,7 @@ const InternShip = () => {
         {
             internShips && internShips.map(intern => {
                 return (
-                    <div className='intern sm:max-w-[50%] md:max-w-[40%] lg:max-w-[31%] w-full h-[400px] items-center justify-start flex-col relative overflow-hidden rounded-xl' key={intern.id}>
+                    <div className='intern sm:max-w-[50%] md:max-w-[40%] lg:max-w-[31%] w-full h-[400px] items-center justify-start flex-col relative overflow-hidden rounded-xl' key={intern.id} data-aos="fade-top">
                     <img className='w-full rounded-2xl h-full object-cover' src={intern.image} alt={intern.description} />
                     <div className='w-full text-center md:text-left absolute bottom-3 text-white z-10 px-3'>
                     <h3 className='font-bold text-2xl md:text-3xl'>{intern.title}</h3>
@@ -136,7 +143,7 @@ const InternShip = () => {
                         <h2 className='md:text-5xl text-2xl font-bold'>Contact Us for IT Internships and Training Programs</h2>
                         <p className='mt-7'>Get in touch with us to apply for exciting internship opportunities.</p>
                     </div>
-                    <div className='max-w-[550px] w-full bg-[#E1F5FE] p-6 flex justify-center rounded-xl mt-7'>
+                    <div className='max-w-[550px] w-full bg-[#E1F5FE] p-6 flex justify-center rounded-xl mt-7' data-aos="fade-up">
                         <ApplyForm />
                     </div>
                 </div>

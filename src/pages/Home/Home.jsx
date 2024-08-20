@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './Hero/Hero';
 import elevateImg from "../../assets/elevate.avif";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "./Home.css"
 
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const careers = [
     {
       id: 1,

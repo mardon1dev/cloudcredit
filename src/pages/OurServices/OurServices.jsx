@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ApplyForm from '../../components/ApplyForm/ApplyForm'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const OurServices = () => {
+
+    useEffect(()=>{
+        AOS.init();
+    }, [])
     const services =[
         {
             id:1,
@@ -33,7 +40,7 @@ const OurServices = () => {
                         {
                             services && services.map(item => {
                                 return (
-                                    <div className='sm:max-w-[50%] md:max-w-[40%] lg:max-w-[31%] items-center justify-start flex-col' key={item.id}>
+                                    <div className='sm:max-w-[50%] md:max-w-[40%] lg:max-w-[31%] items-center justify-start flex-col' key={item.id} data-aos="fade-up">
                                         <img className='w-full rounded-t-xl h-[250px] object-cover' src={item.image} alt={item.description} />
                                         <div className='w-full text-center md:text-left bg-white p-7 min-h-[200px]'>
                                             <h3 className='font-bold text-xl md:text-2xl'>{item.title}</h3>
@@ -50,11 +57,11 @@ const OurServices = () => {
         <section className='py-[100px]'>
             <div className="container">
                 <div className="flex flex-col items-center">
-                    <div className='max-w-[550px] mx-auto text-center'>
+                    <div className='max-w-[550px] mx-auto text-center' data-aos="fade-up">
                         <h2 className='md:text-5xl text-2xl font-bold'>Contact Us for IT Internships and Training Programs</h2>
                         <p className='mt-7'>Get in touch with us to apply for exciting internship opportunities.</p>
                     </div>
-                    <div className='max-w-[550px] w-full bg-[#E1F5FE] p-6 flex justify-center rounded-xl mt-7'>
+                    <div className='max-w-[550px] w-full bg-[#E1F5FE] p-6 flex justify-center rounded-xl mt-7' data-aos="fade-up">
                         <ApplyForm />
                     </div>
                 </div>
